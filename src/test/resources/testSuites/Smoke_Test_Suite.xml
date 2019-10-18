@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="uc-flight-ui-qa-automation" configfailurepolicy="continue">
+
+	<listeners>
+ 		<listener class-name="com.udchalo.generic.CustomReporter" />
+		
+	</listeners>
+
+<!-- Suite -->
+ <test name="FlightUI_Automation_Smoke_Test_Suite">
+    <classes>
+      <class name="com.udchalo.testscripts.LoginTest"/>
+       <class name="com.udchalo.testscripts.SearchFlightTest"/>
+      <class name="com.udchalo.testscripts.ModifySearchTest"/> 
+       <class name="com.udchalo.testscripts.SearchFlight_Set_1_Test"/>                
+    </classes>
+  </test> <!-- Test -->
+	
+</suite>
